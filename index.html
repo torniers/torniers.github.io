@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stephan Tornier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Stephan Tornier</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="research_activities.html">Research Activities</a></li>
+      <li><a href="engagement_activities.html">Engagement Activities</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
+  </div>
+
+  <!-- Main layout -->
+  <div class="main">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="images/profile.jpg" alt="Profile Photo">
+      <h1 class="centered">Mathematician</h1>
+      <br>
+      <p class="centered">Lecturer & DECRA Fellow</p>
+      <p class="centered">The University of Newcastle <br> New South Wales, Australia</p>
+      <p class="centered">stephan.tornier@newcastle.edu.au</p>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h2>Home</h2>
+	<p> I am an early to mid-career academic in the area of group theory, the mathematical formalisation of the intuitive concept of symmetry. Specifically, I am concerned with the symmetry of infinite discrete structures, such as graphs or networks, which are prevalent in our digital world and therefore constitute an important field of applications of mathematics to technology. My research combines the latest theoretical insights into such structures with computational approaches in order to advance our understanding of the underlying mathematical objects.<br /><br />Throughout, my research journey has been driven by a strong commitment to collaboration. I have had the privilege to collaborate with distinguished researchers, both within and beyond my institution, to expand the scope of inquiry and pave the way for innovative breakthroughs, such as <a href="https://gap-packages.github.io/UGALY/" target="_blank">software</a> with the potential to accelerate research across the field.
+	</p>
+	
+	<h3>Teaching</h3>
+	<p>
+		Beyond my research, I am deeply dedicated to sharing the beauty of mathematics with others. As an experienced lecturer and supervisor, I strive to guide and inspire students at various levels and thereby educate the next generation of researchers. My efforts have ranged from creating <a href="https://player.vimeo.com/video/457708888" target="_blank">videos for high-school students</a>, via first-year projects in <a href="data/200100_NEWCASTLE_flyer_puzzles_codes_and_groups.pdf" target="_blank">Puzzles, Codes and Groups</a> and AMSI summer scholar <a href="https://zerodimensional.group/student_projects.shtml" target="_blank">projects</a> to the <a href="https://www.newcastle.edu.au/profile/stephan-tornier#supervision" target="_blank">supervision</a> of Honours, Master's and Ph.D. students.
+	</p>
+	
+	<h3>Background</h3>
+	<p>
+	My academic journey began with a solid foundation in mathematics, physics, and geography during high school in Northern Germany. With a particular interest in astronomy and theoretical physics at the time, I decided to pursue a Bachelor's degree in mathematics at <a href="https://ethz.ch/en.html" target="_blank">ETH Zurich</a>, including an enriching exchange program at the Australian National University in Canberra.<br /><br />Building on this foundation, I continued my studies in mathematics with a Master's and Ph.D. at ETH Zurich. This allowed me to delve deeply into the fascinating world of group theory, specifically locally compact groups. Whereas my studies focused on the connected case of Lie groups, my Master's thesis concerned rigidity phenomena associated to Property (T) and amenability in general locally compact groups. Finally, in my Ph.D. thesis, I transitioned to the opposite side of the spectrum by studying totally disconnected locally compact groups, such as groups acting on trees.
+	</p>
+    </div>
+  </div>
+
+  <!-- Script for navbar highlight -->
+  <script>
+    const path = window.location.pathname.split("/").pop();
+    const currentPage = path === "" ? "index.html" : path;
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>
+
