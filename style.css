@@ -143,3 +143,49 @@ ol[reversed] li {
 }
 
 
+
+/* Students */
+.student {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 40px;
+}
+
+.student-info {
+  width: 240px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.student-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.student-photo-wrap {
+  height: 140px;
+  padding: 0 25px;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+.student-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.student-project {
+  flex: 1;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.student-project h3 {
+  margin-top: 0;
+}
+
